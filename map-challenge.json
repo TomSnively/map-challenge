@@ -1,0 +1,63 @@
+{
+  "continent":[
+    {
+      "Asia":{
+        "country":[
+          "Afghanistan",
+          "Armenia",
+          "Azerbaijan",
+          "Bahrain",
+          "Bangladesh",
+          "Bhutan",
+          "Brunei",
+          "Cambodia",
+          {
+            "China":{
+              "city":[
+                "Beijing",
+                "Shanghai"
+              ],
+              "river":[
+                "Yangtze",
+                "Yellow River"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "Antarctica",
+    "Asia",
+    "Australia",
+    "Europe",
+    {
+      "North America":{
+        "country":[
+          "Mexico",
+          "Canada",
+          {
+            "United States of America":{
+              "state":[
+                {
+                  "Pennsylvania":{
+                    "city":[
+                      "Philadelphia",
+                      "Pittsburgh"
+                    ]
+                  },
+                  "New York":{
+                    "city":[
+                      "Albany",
+                      "New York"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "South America"
+  ]
+}
