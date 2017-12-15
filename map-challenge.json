@@ -1,3 +1,4 @@
+let data =
 {
   "continent":[
     {
@@ -61,3 +62,4 @@
     "South America"
   ]
 }
+;
