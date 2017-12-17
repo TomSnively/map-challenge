@@ -1,13 +1,3 @@
-//"river":[
-//"Yangtze",
-//"Yellow River"
-//]
-
-//"city":[
-//"Washington, D.C."
-//],
-
-
 let dataObject =
 {
   "continent":[
@@ -102,7 +92,12 @@ let dataObject =
             "China":{
               "city":[
                 "Beijing"
+              ],
+              "river":[
+                "Yangtze",
+                "Yellow River"
               ]
+
             }
           },
           {
@@ -1701,6 +1696,9 @@ let dataObject =
           },
           {
             "United States":{
+              "city":[
+                "Washington, D.C."
+              ],
               "state":[
                 {
                   "Alabama":{
