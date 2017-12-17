@@ -23,12 +23,13 @@ let dataObject =
                 "Yellow River"
               ]
             }
-          }
+          },
+          "India"
         ]
       }
     },
+    "Africa",
     "Antarctica",
-    "Asia",
     "Australia",
     "Europe",
     {
@@ -40,16 +41,254 @@ let dataObject =
             "United States":{
               "state":[
                 {
-                  "Pennsylvania":{
+                  "Alabama":{
                     "city":[
-                      "Philadelphia",
-                      "Pittsburgh"
+                      "Montgomery"
+                    ]
+                  },
+                  "Alaska":{
+                    "city":[
+                      "Juneau"
+                    ]
+                  },
+                  "Arizona":{
+                    "city":[
+                      "Phoenix"
+                    ]
+                  },
+                  "Arkansas":{
+                    "city":[
+                      "Little Rock"
+                    ]
+                  },
+                  "California":{
+                    "city":[
+                      "Sacramento"
+                    ]
+                  },
+                  "Colorado":{
+                    "city":[
+                      "Denver"
+                    ]
+                  },
+                  "Connecticut":{
+                    "city":[
+                      "Hartford"
+                    ]
+                  },
+                  "Delaware":{
+                    "city":[
+                      "Dover"
+                    ]
+                  },
+                  "Florida":{
+                    "city":[
+                      "Tallahassee"
+                    ]
+                  },
+                  "Georgia":{
+                    "city":[
+                      "Atlanta"
+                    ]
+                  },
+                  "Hawaii":{
+                    "city":[
+                      "Honolulu"
+                    ]
+                  },
+                  "Idaho":{
+                    "city":[
+                      "Boise"
+                    ]
+                  },
+                  "Illinois":{
+                    "city":[
+                      "Springfield"
+                    ]
+                  },
+                  "Indiana":{
+                    "city":[
+                      "Indianapolis"
+                    ]
+                  },
+                  "Iowa":{
+                    "city":[
+                      "Des Moines"
+                    ]
+                  },
+                  "Kansas":{
+                    "city":[
+                      "Topeka"
+                    ]
+                  },
+                  "Kentucky":{
+                    "city":[
+                      "Frankfort"
+                    ]
+                  },
+                  "Louisiana":{
+                    "city":[
+                      "Baton Rouge"
+                    ]
+                  },
+                  "Maine":{
+                    "city":[
+                      "Augusta"
+                    ]
+                  },
+                  "Maryland":{
+                    "city":[
+                      "Annapolis"
+                    ]
+                  },
+                  "Massachusetts":{
+                    "city":[
+                      "Boston"
+                    ]
+                  },
+                  "Michigan":{
+                    "city":[
+                      "Lansing"
+                    ]
+                  },
+                  "Minnesota":{
+                    "city":[
+                      "Saint Paul"
+                    ]
+                  },
+                  "Mississippi":{
+                    "city":[
+                      "Jackson"
+                    ]
+                  },
+                  "Missouri":{
+                    "city":[
+                      "Jefferson City"
+                    ]
+                  },
+                  "Montana":{
+                    "city":[
+                      "Helena"
+                    ]
+                  },
+                  "Nebraska":{
+                    "city":[
+                      "Lincoln"
+                    ]
+                  },
+                  "Nevada":{
+                    "city":[
+                      "Carson City"
+                    ]
+                  },
+                  "New Hampshire":{
+                    "city":[
+                      "Concord"
+                    ]
+                  },
+                  "New Jersey":{
+                    "city":[
+                      "Trenton"
+                    ]
+                  },
+                  "New Mexico":{
+                    "city":[
+                      "Santa Fe"
                     ]
                   },
                   "New York":{
                     "city":[
-                      "Albany",
-                      "New York"
+                      "Albany"
+                    ]
+                  },
+                  "North Carolina":{
+                    "city":[
+                      "Raleigh"
+                    ]
+                  },
+                  "North Dakota":{
+                    "city":[
+                      "Bismarck"
+                    ]
+                  },
+                  "Ohio":{
+                    "city":[
+                      "Columbus"
+                    ]
+                  },
+                  "Oklahoma":{
+                    "city":[
+                      "Oklahoma City"
+                    ]
+                  },
+                  "Oregon":{
+                    "city":[
+                      "Salem"
+                    ]
+                  },
+                  "Pennsylvania":{
+                    "city":[
+                      "Harrisburg"
+                    ]
+                  },
+                  "Rhode Island":{
+                    "city":[
+                      "Providence"
+                    ]
+                  },
+                  "South Carolina":{
+                    "city":[
+                      "Columbia"
+                    ]
+                  },
+                  "South Dakota":{
+                    "city":[
+                      "Pierre"
+                    ]
+                  },
+                  "Tennessee":{
+                    "city":[
+                      "Nashville"
+                    ]
+                  },
+                  "Texas":{
+                    "city":[
+                      "Austin"
+                    ]
+                  },
+                  "Utah":{
+                    "city":[
+                      "Salt Lake City"
+                    ]
+                  },
+                  "Vermont":{
+                    "city":[
+                      "Montpelier"
+                    ]
+                  },
+                  "Virginia":{
+                    "city":[
+                      "Richmond"
+                    ]
+                  },
+                  "Washington":{
+                    "city":[
+                      "Olympia"
+                    ]
+                  },
+                  "West Virginia":{
+                    "city":[
+                      "Charleston"
+                    ]
+                  },
+                  "Wisconsin":{
+                    "city":[
+                      "Madison"
+                    ]
+                  },
+                  "Wyoming":{
+                    "city":[
+                      "Cheyenne"
                     ]
                   }
                 }
@@ -60,6 +299,94 @@ let dataObject =
       }
     },
     "South America"
+  ],
+  "ocean":[
+    "Arctic",
+    "Atlantic",
+    "Indian",
+    "Pacific"
+  ],
+  "desert":[
+    "Sahara",
+    "Arabian Desert",
+    "Gobi Desert",
+    "Kalahari Desert",
+    "Great Victoria Desert",
+    "Patagonian Desert",
+    "Syrian Desert",
+    "Great Basin Desert"
+  ],
+  "mountainRange":[
+    "Mid-ocean ridge",
+    "Andes",
+    "Rocky Mountains",
+    "Great Dividing Range",
+    "Transantarctic Mountains",
+    "Kunlun Mountains",
+    "Ural Mountains",
+    "Atlas Mountains",
+    "Appalachian Mountains",
+    "Himalayas"
+  ],
+  "latitude":[
+    "Antarctic Circle",
+    "Arctic Cirtcle",
+    "Equator",
+    "Tropic of Cancer",
+    "Tropic of Capricorn"
+  ],
+  "longitude":[
+    "International Date Line",
+    "Prime Meridian"
+  ],
+  "gulf":[
+    "Gulf of Mexico",
+    "Persian Gulf"
+  ],
+  "sea":[
+    "Coral Sea",
+    "Arabian Sea",
+    "South China Sea",
+    "Caribbean Sea",
+    "Mediterranean Sea",
+    "Bering Sea",
+    "Norwegian Sea",
+    "Sea of Okhotsk",
+    "Greenland Sea",
+    "Arafura Sea",
+    "Sea of Japan",
+    "Siberian Sea",
+    "North Sea",
+    "Black Sea",
+    "Red Sea",
+    "Baltic Sea",
+    "Caspian Sea"
+  ],
+  "lake":[
+    "Lake Superior",
+    "Lake Victoria",
+    "Lake Huron",
+    "Lake Michigan",
+    "Lake Tanganyika",
+    "Lake Baikal",
+    "Great Bear Lake",
+    "Lake Malawi",
+    "Great Slave Lake",
+    "Lake  Erie",
+    "Lake Winnipeg",
+    "Lake Ontario"
+  ],
+  bay:[
+    "Bay of Bengal",
+    "Hudson's Bay",
+    "Bay of Biscay ",
+    "Barrin Bay",
+    "James Bay",
+    "Chesapeake Bay",
+    "Bay of Fundy",
+    "Port Phillip Bay",
+    "San Francisco Bay",
+    "Banderas Bay"
   ]
 }
 ;

@@ -2,7 +2,27 @@
 // data is being read from the JSON file
 //data = JSON.parse(data);
 console.log(dataObject);
-let data = {};
+let data =
+    {
+        bay: [],
+        city: [],
+        continent: [],
+        country: [],
+        desert: [],
+        gulf: [],
+        lake: [],
+        latitude: [],
+        longitude: [],
+        mountainRange: [],
+        ocean: [],
+        river: [],
+        sea: [],
+        state: [],
+    };
+
+
+
+let treeStack = [];
 
 // continents
 // country
@@ -17,31 +37,39 @@ function eachRecursive(obj, isKey, objectType) {
     for (let k in obj) {
         if (typeof obj[k] === "string" && obj[k] !== null) {
             console.log('it is string, objectType, k are: ' + objectType, obj[k]);
-            //data[objectType].push(obj[k]);
+            data[objectType].push(obj[k]);
+            isKey = true;
 
         } else if (typeof obj[k] === "object" && obj[k] !== null){
             if (isNaN(k)) {
                 isKey = !isKey;
                 if (isKey) {
-                    //sconsole.log('left side key, k = ' + k);
+                    console.log('left side key, k = ' + k);
                     objectType = k;
+                    treeStack.push(k);
+                    console.log('just pushed, treeStack = ' + treeStack);
                 } else {
                     console.log('right side object, objectType, k are: ', objectType, k);
-                    //sdata[objectType].push(k);
+                    data[objectType].push(k);
                 }
 
             } else {
-                //sconsole.log('k is a number index (ignore), k = ' + k);
+                //console.log('k is a number index (ignore), k = ' + k);
             }
             //console.log('about to go in again, k is ' + k);
             eachRecursive(obj[k], isKey, objectType);
+            isKey = !isKey;
+
         } else {
             console.log('error');
 
         }
-
-    }                       // end of for loop, chance to pop a level?
-    console.log('for loop over, leaving function. Pop our last objectType??');s
+    }                       // end of for loop, time to pop a level
+    if (isKey) {
+        treeStack.pop();
+        objectType = treeStack[treeStack.length - 1];
+        console.log('for loop over, we just popped. objectType = ' + objectType + ', treeStack = ' + treeStack);
+    }
 }
 
 let isKey = false;
