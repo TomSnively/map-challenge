@@ -56,7 +56,10 @@ function eachRecursive(obj, isKey, objectType) {
 
         }
     }                       // end of for loop, time to pop a level
-    if (isKey) {
+    // ??
+    if (!isKey || treeStack[3] === 'city') {
+        // ??s
+        if (treeStack[3] === 'city') isKey = true;
         treeStack.pop();
         objectType = treeStack[treeStack.length - 1];
         console.log('for loop over, we just popped. objectType = ' + objectType + ', treeStack = ' + treeStack);
