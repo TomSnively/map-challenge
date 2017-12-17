@@ -24,15 +24,6 @@ let data =
 
 let treeStack = [];
 
-// continents
-// country
-// state or
-// city and river
-// then
-
-// We have a bug when we get to "city" "river"
-// objectType isn't being remembered when we come out of the recursion
-
 function eachRecursive(obj, isKey, objectType) {
     for (let k in obj) {
         if (typeof obj[k] === "string" && obj[k] !== null) {
@@ -58,7 +49,7 @@ function eachRecursive(obj, isKey, objectType) {
             }
             //console.log('about to go in again, k is ' + k);
             eachRecursive(obj[k], isKey, objectType);
-            isKey = !isKey;
+            //isKey = !isKey;
 
         } else {
             console.log('error');
