@@ -70,6 +70,23 @@ function eachRecursive(obj, key) {
     }
 }
 
+function startMapChallenge() {
+    console.log('clicked Go');
+    let rand1 = Math.floor(Math.random() * array1.length);
+    let rand2 = Math.floor(Math.random() * array2.length);
+    let rand3 = Math.floor(Math.random() * array3.length);
+    let rand4 = Math.floor(Math.random() * array4.length);
+    let rand5 = Math.floor(Math.random() * array5.length);
+
+    document.querySelector('#array1').value = array1[rand1];
+    document.querySelector('#array2').value = array2[rand2];
+    document.querySelector('#array3').value = array3[rand3];
+    document.querySelector('#array4').value = array4[rand4];
+    document.querySelector('#array5').value = array5[rand5];
+
+}
+
+
 eachRecursive(dataObject);
 
 // set up 5 arrays for displaying
