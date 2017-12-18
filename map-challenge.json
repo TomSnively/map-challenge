@@ -140,6 +140,10 @@ let dataObject =
             "India":{
               "city":[
                 "New Delhi"
+              ],
+              "river":[
+                "Indus River",
+                "Ganges River"
               ]
             }
           },
@@ -161,6 +165,10 @@ let dataObject =
             "Iraq":{
               "city":[
                 "Baghdad"
+              ],
+              "river":[
+                "Tigris River",
+                "Euphrates River"
               ]
             }
           },
@@ -400,6 +408,10 @@ let dataObject =
             "Vietnam":{
               "city":[
                 "Hanoi"
+
+              ],
+              "river":[
+                "Mekong River"
               ]
             }
           },
@@ -518,6 +530,9 @@ let dataObject =
             "Egypt":{
               "city":[
                 "Cairo"
+              ],
+              "river":[
+                "Nile River"
               ]
             }
           },
@@ -1699,6 +1714,12 @@ let dataObject =
               "city":[
                 "Washington, D.C."
               ],
+              "river":[
+                "Missouri River",
+                "Mississippi River",
+                "Rio Grande",
+                "Colorado River"
+              ],
               "state":[
                 {
                   "Alabama":{
@@ -1985,7 +2006,11 @@ let dataObject =
           {
             "Brazil":{
               "city":[
-                "Brasília"
+                "Brasília",
+                "Rio de Janeiro"
+              ],
+              "river":[
+                "Amazon River"
               ]
             }
           },
@@ -2078,13 +2103,13 @@ let dataObject =
     }
   ],
   "ocean":[
-    "Arctic",
-    "Atlantic",
-    "Indian",
-    "Pacific"
+    "Arctic Ocean",
+    "Atlantic Ocean",
+    "Indian Ocean",
+    "Pacific Ocean"
   ],
   "desert":[
-    "Sahara",
+    "Sahara Desert",
     "Arabian Desert",
     "Gobi Desert",
     "Kalahari Desert",
@@ -2094,7 +2119,7 @@ let dataObject =
     "Great Basin Desert"
   ],
   "mountainRange":[
-    "Mid-ocean ridge",
+    "Mid-ocean ridge (mountain range)",
     "Andes",
     "Rocky Mountains",
     "Great Dividing Range",
@@ -2149,9 +2174,10 @@ let dataObject =
     "Great Bear Lake",
     "Lake Malawi",
     "Great Slave Lake",
-    "Lake  Erie",
+    "Lake Erie",
     "Lake Winnipeg",
-    "Lake Ontario"
+    "Lake Ontario",
+    "Lake Huron"
   ],
   "bay":[
     "Bay of Bengal",
@@ -2163,6 +2189,7 @@ let dataObject =
     "Bay of Fundy",
     "Port Phillip Bay",
     "San Francisco Bay",
+    "Chesapeake Bay",
     "Banderas Bay"
   ]
 }
