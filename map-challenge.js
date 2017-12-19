@@ -72,6 +72,9 @@ function eachRecursive(obj, key) {
 
 function startMapChallenge() {
     console.log('clicked Go');
+
+    document.querySelector('#go').hidden = true;
+
     let rand1 = Math.floor(Math.random() * array1.length);
     let rand2 = Math.floor(Math.random() * array2.length);
     let rand3 = Math.floor(Math.random() * array3.length);
@@ -84,8 +87,37 @@ function startMapChallenge() {
     document.querySelector('#array4').value = array4[rand4];
     document.querySelector('#array5').value = array5[rand5];
 
+    document.querySelector('#array1').hidden = false;
+    document.querySelector('#array2').hidden = false;
+    document.querySelector('#array3').hidden = false;
+    document.querySelector('#array4').hidden = false;
+    document.querySelector('#array5').hidden = false;
 }
 
+function addToArray(arraySoFar, newArray){
+    for (let x = 0; x < newArray.length; x++) {
+        arraySoFar.push(newArray[x]);
+    }
+    return arraySoFar;
+}
+
+function displayAllData(fieldName, dataArray){
+    let html = "";
+    for (var i = 0; i < dataArray.length; i++){
+        html += '<option>' + dataArray[i] + '</option>\n';
+    }
+    document.getElementById(fieldName).innerHTML = html;
+}
+
+function foundItem(buttonID){
+    let button = document.getElementById(buttonID);
+    //console.log (button);
+    let itemData = button.value;
+    //console.log(itemData);
+    let parent = button.parentElement;
+    button.hidden = true;
+    parent.innerHTML = 'Found "' + itemData + '"';
+}
 
 eachRecursive(dataObject);
 
@@ -100,13 +132,6 @@ array1 = data.country;
 array2 = data.city;
 array3 = data.state;
 
-function addToArray(arraySoFar, newArray){
-    for (let x = 0; x < newArray.length; x++) {
-        arraySoFar.push(newArray[x]);
-    }
-    return arraySoFar;
-}
-
 array4 = addToArray(data.ocean, array4);
 array4 = addToArray(data.sea, array4);
 array4 = addToArray(data.river, array4);
@@ -118,3 +143,9 @@ array5 = addToArray(data.mountainRange, array5);
 array5 = addToArray(data.desert, array5);
 array5 = addToArray(data.longitude, array5);
 array5 = addToArray(data.latitude, array5);
+
+displayAllData('displayAllArray1', array1);
+displayAllData('displayAllArray2', array2);
+displayAllData('displayAllArray3', array3);
+displayAllData('displayAllArray4', array4);
+displayAllData('displayAllArray5', array5);

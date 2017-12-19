@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
         <title>Map Challenge!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <h1>Map Challenge</h1>
-        <p>
-            Get your map ready! When you begin, you will have five geographical items (one country, one US state, one city, one body of water and one other item.
-        </p>
+        <div class="container-fluid">
+            <h1>Map Challenge</h1>
+            <p>
+                Get your map ready! When you begin, you will have five geographical items (one country, one US state, one city, one body of water and one other item.
+            </p>
 
-        <button type="button" onclick="startMapChallenge()">Go!</button><br /><br />
-        Country: <input id="array1" type="text" readonly="readonly" size="60" /><br /><br />
-        City: <input id="array2" type="text" readonly="readonly" size="60" /><br /><br />
-        US State: <input id="array3" type="text" readonly="readonly" size="60" /><br /><br />
-        Body of Water: <input id="array4" type="text" readonly="readonly" size="60" /><br /><br />
-        Other Item: <input id="array5" type="text" readonly="readonly" size="60" /><br /><br />
+            <button type="button" id="go" onclick="startMapChallenge()">Go!</button><br /><br />
+            Click on each item when you find it on your map.<br /><br />
+
+            <div class="row">
+                <div class="col-sm-2">Country</div>
+                <div class="col-sm-8"><input id="array1" type="button" hidden="hidden" onclick="foundItem('array1')"/></div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-2">City</div>
+                <div class="col-sm-8"><input id="array2" type="button" hidden="hidden" onclick="foundItem('array2')"/></div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-2">US State</div>
+                <div class="col-sm-8"><input id="array3" type="button" hidden="hidden" onclick="foundItem('array3')"/></div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-2">Body of Water</div>
+                <div class="col-sm-8"><input id="array4" type="button" hidden="hidden" onclick="foundItem('array4')"/></div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-2">Other Item</div>
+                <div class="col-sm-8"><input id="array5" type="button" hidden="hidden" onclick="foundItem('array5')"/></div>
+            </div>
+
+            <br /><br />
+            <details>
+                <summary>See all Map Challenge data (to confirm they are on your map)</summary>
+
+                <br />
+                <strong>Countries:</strong> <br />
+                <select id="displayAllArray1" size="6" multiple ></select><br />
+                <strong>Cities:</strong> <br />
+                <select id="displayAllArray2" size="6" multiple ></select><br />
+                <strong>US States:</strong> <br />
+                <select id="displayAllArray3" size="6" multiple ></select><br />
+                <strong>Bodies of Water:</strong> <br />
+                <select id="displayAllArray4" size="6" multiple ></select><br />
+                <strong>Other Items:</strong> <br />
+                <select id="displayAllArray5" size="6" multiple ></select><br />
+
+                <p></p>
+            </details>
+        </div>
 
         <script type="text/javascript" src="map-challenge.json"></script>
         <script src="map-challenge.js"></script>
