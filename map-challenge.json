@@ -5,13 +5,6 @@ let dataObject =
       "Asia":{
         "country":[
           {
-            "Abkhazia":{
-              "city":[
-                "Sukhumi"
-              ]
-            }
-          },
-          {
             "Afghanistan":{
               "city":[
                 "Kabul"
@@ -19,23 +12,9 @@ let dataObject =
             }
           },
           {
-            "Akrotiri and Dhekelia":{
-              "city":[
-                "Episkopi Cantonment"
-              ]
-            }
-          },
-          {
             "Armenia":{
               "city":[
                 "Yerevan"
-              ]
-            }
-          },
-          {
-            "Artsakh":{
-              "city":[
-                "Stepanakert"
               ]
             }
           },
@@ -265,13 +244,6 @@ let dataObject =
             }
           },
           {
-            "Northern Cyprus":{
-              "city":[
-                "North Nicosia"
-              ]
-            }
-          },
-          {
             "North Korea":{
               "city":[
                 "Pyongyang"
@@ -289,13 +261,6 @@ let dataObject =
             "Pakistan":{
               "city":[
                 "Islamabad"
-              ]
-            }
-          },
-          {
-            "Palestine":{
-              "city":[
-                "Gaza"
               ]
             }
           },
@@ -331,13 +296,6 @@ let dataObject =
             "South Korea":{
               "city":[
                 "Seoul"
-              ]
-            }
-          },
-          {
-            "South Ossetia":{
-              "city":[
-                "Tskhinvali"
               ]
             }
           },
@@ -715,13 +673,6 @@ let dataObject =
             "Rwanda":{
               "city":[
                 "Kigali"
-              ]
-            }
-          },
-          {
-            "Sahrawi Arab Democratic Republic":{
-              "city":[
-                "El Aaiún"
               ]
             }
           },
@@ -2193,4 +2144,3 @@ let dataObject =
     "Banderas Bay"
   ]
 }
-;
