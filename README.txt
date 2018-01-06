@@ -23,12 +23,12 @@ I will read this file from a JSON file that contains all the data.
 
 To do list:
 
-[ ] Create JSON data file
-[ ] Read the fie
-[ ] Turn it into usable data
-[ ] Choose five random items
-[ ] Make the five buttons
-[ ] Implement the clock
+[x] Create JSON data file
+[x] Read the fie
+[x] Turn it into usable data
+[x] Choose five random items
+[x] Make the five buttons
+[x] Implement the clock
 [ ] Try adding hints when time is running low
 [ ] Add "beeps" or other sound effects to let someone know of a hint (or when clock runs low)
 

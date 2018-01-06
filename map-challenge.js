@@ -1,5 +1,4 @@
 // data is being read from the JSON file
-
 //console.log(dataObject);
 let data =
     {
@@ -18,6 +17,11 @@ let data =
         sea: [],
         state: [],
     };
+let timerRunning = false;
+let startTime;
+let timerVar;
+const clockLength = 20;
+let leftToFind = 5;
 
 function isLowercaseLetter(letter){
     //console.log('checking letter ' + letter);
@@ -32,9 +36,8 @@ function saveData(key, object){
 }
 
 function eachRecursive(obj, key) {
-
     let nextKey = "";
-    for (var k in obj)
+    for (let k in obj)
     {
         if (typeof obj[k] == "object" && obj[k] !== null) {
             if (isNaN(k)){
@@ -92,6 +95,41 @@ function startMapChallenge() {
     document.querySelector('#array3').hidden = false;
     document.querySelector('#array4').hidden = false;
     document.querySelector('#array5').hidden = false;
+
+    startTime = new Date();
+    let timer = document.querySelector('#timer');
+    timer.innerHTML = clockLength;
+
+    timerRunning = true;
+    timerVar = setInterval(timeInterval, 1000);
+}
+
+function timeInterval (){
+    //console.log('second went by');
+
+    let currentTime = new Date();
+    //console.log(startTime, currentTime);
+    let secondsLeft = clockLength - ((currentTime - startTime) / 1000);
+
+    let timer = document.querySelector('#timer');
+    timer.innerHTML = Math.round(secondsLeft);
+    if (secondsLeft < 10) {
+        timer.style.color = 'red';
+    }
+
+
+    if (secondsLeft < 0) {
+        timerRunning = false;
+        timeRanOut();
+    }
+}
+
+function timeRanOut(){
+    console.log('time ran out!');
+    clearInterval(timerVar);
+    let timer = document.querySelector('#timer');
+    timer.innerHTML = 'Time ran out!';
+
 }
 
 function addToArray(arraySoFar, newArray){
@@ -103,7 +141,7 @@ function addToArray(arraySoFar, newArray){
 
 function displayAllData(fieldName, dataArray){
     let html = "";
-    for (var i = 0; i < dataArray.length; i++){
+    for (let i = 0; i < dataArray.length; i++){
         html += '<option>' + dataArray[i] + '</option>\n';
     }
     document.getElementById(fieldName).innerHTML = html;
@@ -117,6 +155,17 @@ function foundItem(buttonID){
     let parent = button.parentElement;
     button.hidden = true;
     parent.innerHTML = 'Found "' + itemData + '"';
+    leftToFind--;
+
+    if (leftToFind === 0) {
+        console.log('Found them all!');
+        timerRunning = false;
+        clearInterval(timerVar);
+        let timer = document.querySelector('#timer');
+        timer.innerHTML = 'You did it!';
+        timer.style.color = 'green';
+
+    }
 }
 
 eachRecursive(dataObject);

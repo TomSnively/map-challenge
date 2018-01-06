@@ -995,13 +995,6 @@ let dataObject =
       "Europe":{
         "country":[
           {
-            "Åland Islands":{
-              "city":[
-                "Mariehamn"
-              ]
-            }
-          },
-          {
             "Albania":{
               "city":[
                 "Tirana"
@@ -1121,13 +1114,6 @@ let dataObject =
             }
           },
           {
-            "Guernsey":{
-              "city":[
-                "Saint Peter Port"
-              ]
-            }
-          },
-          {
             "Hungary":{
               "city":[
                 "Budapest"
@@ -1149,23 +1135,9 @@ let dataObject =
             }
           },
           {
-            "Isle of Man":{
-              "city":[
-                "Douglas"
-              ]
-            }
-          },
-          {
             "Italy":{
               "city":[
                 "Rome"
-              ]
-            }
-          },
-          {
-            "Jersey":{
-              "city":[
-                "Saint Helier"
               ]
             }
           },
@@ -1338,13 +1310,6 @@ let dataObject =
             }
           },
           {
-            "Transnistria":{
-              "city":[
-                "Tiraspol"
-              ]
-            }
-          },
-          {
             "Ukraine":{
               "city":[
                 "Kiev"
@@ -1365,13 +1330,6 @@ let dataObject =
     {
       "North America":{
         "country":[
-          {
-            "Anguilla":{
-              "city":[
-                "The Valley"
-              ]
-            }
-          },
           {
             "Antigua and Barbuda":{
               "city":[
@@ -2083,7 +2041,7 @@ let dataObject =
   ],
   "latitude":[
     "Antarctic Circle",
-    "Arctic Cirtcle",
+    "Arctic Circle",
     "Equator",
     "Tropic of Cancer",
     "Tropic of Capricorn"
