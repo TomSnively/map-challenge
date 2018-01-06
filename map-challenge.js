@@ -39,7 +39,7 @@ function eachRecursive(obj, key) {
     let nextKey = "";
     for (let k in obj)
     {
-        if (typeof obj[k] == "object" && obj[k] !== null) {
+        if (typeof obj[k] === "object" && obj[k] !== null) {
             if (isNaN(k)){
                 //console.log('is object, key, k are: ' + key +  ' and ' + k);
                 if(isLowercaseLetter(k[0])) {
@@ -129,6 +129,12 @@ function timeRanOut(){
     clearInterval(timerVar);
     let timer = document.querySelector('#timer');
     timer.innerHTML = 'Time ran out!';
+
+    document.getElementById("array1").disabled = true;
+    document.getElementById("array2").disabled = true;
+    document.getElementById("array3").disabled = true;
+    document.getElementById("array4").disabled = true;
+    document.getElementById("array5").disabled = true;
 
 }
 
