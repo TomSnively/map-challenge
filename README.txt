@@ -29,9 +29,9 @@ To do list:
 [x] Choose five random items
 [x] Make the five buttons
 [x] Implement the clock
-[ ] disable the buttons when clock runs out
-[ ] add a restart button
-[ ] better label for the clock
+[x] disable the buttons when clock runs out
+[x] add a restart button
+[x] better label for the clock
 [ ] Try adding hints when time is running low
 [ ] Add "beeps" or other sound effects to let someone know of a hint (or when clock runs low)
 

@@ -20,8 +20,8 @@ let data =
 let timerRunning = false;
 let startTime;
 let timerVar;
-const clockLength = 20;
-let leftToFind = 5;
+const clockLength = 60;
+let leftToFind;
 
 function isLowercaseLetter(letter){
     //console.log('checking letter ' + letter);
@@ -73,10 +73,29 @@ function eachRecursive(obj, key) {
     }
 }
 
-function startMapChallenge() {
-    console.log('clicked Go');
+function startMapChallenge(button) {
+    //console.log('clicked Go or Restart');
 
-    document.querySelector('#go').hidden = true;
+    document.querySelector(button).hidden = true;
+
+    document.getElementById("message1").innerHTML = "";
+    document.getElementById("message2").innerHTML = "";
+    document.getElementById("message3").innerHTML = "";
+    document.getElementById("message4").innerHTML = "";
+    document.getElementById("message5").innerHTML = "";
+
+    document.querySelector('#array1').hidden = false;
+    document.querySelector('#array2').hidden = false;
+    document.querySelector('#array3').hidden = false;
+    document.querySelector('#array4').hidden = false;
+    document.querySelector('#array5').hidden = false;
+
+
+    document.getElementById("array1").disabled = false;
+    document.getElementById("array2").disabled = false;
+    document.getElementById("array3").disabled = false;
+    document.getElementById("array4").disabled = false;
+    document.getElementById("array5").disabled = false;
 
     let rand1 = Math.floor(Math.random() * array1.length);
     let rand2 = Math.floor(Math.random() * array2.length);
@@ -90,33 +109,25 @@ function startMapChallenge() {
     document.querySelector('#array4').value = array4[rand4];
     document.querySelector('#array5').value = array5[rand5];
 
-    document.querySelector('#array1').hidden = false;
-    document.querySelector('#array2').hidden = false;
-    document.querySelector('#array3').hidden = false;
-    document.querySelector('#array4').hidden = false;
-    document.querySelector('#array5').hidden = false;
+    leftToFind = 5;
 
     startTime = new Date();
     let timer = document.querySelector('#timer');
-    timer.innerHTML = clockLength;
+    timer.innerHTML = clockLength + " seconds";
 
     timerRunning = true;
     timerVar = setInterval(timeInterval, 1000);
 }
 
 function timeInterval (){
-    //console.log('second went by');
-
     let currentTime = new Date();
-    //console.log(startTime, currentTime);
     let secondsLeft = clockLength - ((currentTime - startTime) / 1000);
 
     let timer = document.querySelector('#timer');
-    timer.innerHTML = Math.round(secondsLeft);
+    timer.innerHTML = Math.round(secondsLeft) + " seconds";
     if (secondsLeft < 10) {
         timer.style.color = 'red';
     }
-
 
     if (secondsLeft < 0) {
         timerRunning = false;
@@ -125,7 +136,7 @@ function timeInterval (){
 }
 
 function timeRanOut(){
-    console.log('time ran out!');
+    //console.log('time ran out!');
     clearInterval(timerVar);
     let timer = document.querySelector('#timer');
     timer.innerHTML = 'Time ran out!';
@@ -136,6 +147,7 @@ function timeRanOut(){
     document.getElementById("array4").disabled = true;
     document.getElementById("array5").disabled = true;
 
+    document.getElementById("restart").hidden = false;
 }
 
 function addToArray(arraySoFar, newArray){
@@ -158,21 +170,25 @@ function foundItem(buttonID){
     //console.log (button);
     let itemData = button.value;
     //console.log(itemData);
-    let parent = button.parentElement;
+    let number = buttonID[buttonID.length-1];
+    //console.log(number);
+    let message = document.getElementById("message" + number);
     button.hidden = true;
-    parent.innerHTML = 'Found "' + itemData + '"';
+    message.innerHTML = 'Found "' + itemData + '"';
     leftToFind--;
 
     if (leftToFind === 0) {
-        console.log('Found them all!');
+        //console.log('Found them all!');
         timerRunning = false;
         clearInterval(timerVar);
         let timer = document.querySelector('#timer');
         timer.innerHTML = 'You did it!';
         timer.style.color = 'green';
-
+        document.getElementById("restart").hidden = false;
     }
 }
+
+document.getElementById("clockLength").innerText = clockLength;
 
 eachRecursive(dataObject);
 

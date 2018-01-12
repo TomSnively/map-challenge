@@ -14,34 +14,40 @@
             <p>
                 Get your map ready! When you begin, you will have five geographical items (one country, one US state, one city, one body of water and one other item.
             </p>
+            <p>
+                Find them all in <span id="clockLength"></span> seconds to beat the clock. Good luck!
+            </p>
 
-            <button type="button" id="go" onclick="startMapChallenge()">Go!</button><br /><br />
+            <button type="button" id="go" onclick="startMapChallenge('#go')">Go!</button>
+            <button type="button" id="restart" hidden="true" onclick="startMapChallenge('#restart')">Play Again!</button>
             <div id="timer"></div>
+            <br />
+
             Click on each item when you find it on your map.<br /><br />
 
             <div class="row">
                 <div class="col-sm-2">Country</div>
-                <div class="col-sm-8"><input id="array1" type="button" hidden="hidden" onclick="foundItem('array1')"/></div>
+                <div class="col-sm-8"><input id="array1" type="button" hidden="hidden" onclick="foundItem('array1')"/><span id="message1"></span></div>
             </div>
             <br />
             <div class="row">
                 <div class="col-sm-2">City</div>
-                <div class="col-sm-8"><input id="array2" type="button" hidden="hidden" onclick="foundItem('array2')"/></div>
+                <div class="col-sm-8"><input id="array2" type="button" hidden="hidden" onclick="foundItem('array2')"/><span id="message2"></span></div>
             </div>
             <br />
             <div class="row">
                 <div class="col-sm-2">US State</div>
-                <div class="col-sm-8"><input id="array3" type="button" hidden="hidden" onclick="foundItem('array3')"/></div>
+                <div class="col-sm-8"><input id="array3" type="button" hidden="hidden" onclick="foundItem('array3')"/><span id="message3"></span></div>
             </div>
             <br />
             <div class="row">
                 <div class="col-sm-2">Body of Water</div>
-                <div class="col-sm-8"><input id="array4" type="button" hidden="hidden" onclick="foundItem('array4')"/></div>
+                <div class="col-sm-8"><input id="array4" type="button" hidden="hidden" onclick="foundItem('array4')"/><span id="message4"></span></div>
             </div>
             <br />
             <div class="row">
                 <div class="col-sm-2">Other Item</div>
-                <div class="col-sm-8"><input id="array5" type="button" hidden="hidden" onclick="foundItem('array5')"/></div>
+                <div class="col-sm-8"><input id="array5" type="button" hidden="hidden" onclick="foundItem('array5')"/><span id="message5"></span></div>
             </div>
 
             <br /><br />
