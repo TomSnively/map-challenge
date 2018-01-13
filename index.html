@@ -11,16 +11,19 @@
     <body>
         <div class="container-fluid">
             <h1>Map Challenge</h1>
-            <p>
-                Get your map ready! When you begin, you will have five geographical items (one country, one US state, one city, one body of water and one other item.
-            </p>
-            <p>
-                Find them all in <span id="clockLength"></span> seconds to beat the clock. Good luck!
-            </p>
+            <h3>Setup</h3>
+            <p>Get your map ready! I suggest this map from National Geographic:</p>
+            <a href="https://shop.nationalgeographic.com/product/maps/wall-maps/world-maps/world-classic-wall-map--enlarged"><img src="map-640.png" /></a>
+            <p>Hang it on your wall, stand in front of it, have this web app ready, and play!</p>
 
+            <h3>The Game</h3>
+            <p>When you begin, you will have five geographical items (one country, one US state, one city, one body of water and one other item.</p>
+            <p>Find them all in <span id="clockLength"></span> seconds to beat the clock. Good luck!</p>
+
+            <div id="timer"></div>
             <button type="button" id="go" onclick="startMapChallenge('#go')">Go!</button>
             <button type="button" id="restart" hidden="true" onclick="startMapChallenge('#restart')">Play Again!</button>
-            <div id="timer"></div>
+
             <br />
 
             Click on each item when you find it on your map.<br /><br />
@@ -52,7 +55,7 @@
 
             <br /><br />
             <details>
-                <summary>See all Map Challenge data (to confirm they are on your map)</summary>
+                <summary>See all Map Challenge data (to confirm they are on your map) - Note I have not finished checking all of these on the above National Geographic map yet.</summary>
 
                 <br />
                 <strong>Countries:</strong> <br />

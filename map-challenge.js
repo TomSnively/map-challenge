@@ -90,7 +90,6 @@ function startMapChallenge(button) {
     document.querySelector('#array4').hidden = false;
     document.querySelector('#array5').hidden = false;
 
-
     document.getElementById("array1").disabled = false;
     document.getElementById("array2").disabled = false;
     document.getElementById("array3").disabled = false;
