@@ -76,7 +76,6 @@ let dataObject =
                 "Yangtze",
                 "Yellow River"
               ]
-
             }
           },
           {
@@ -366,7 +365,6 @@ let dataObject =
             "Vietnam":{
               "city":[
                 "Hanoi"
-
               ],
               "river":[
                 "Mekong River"
@@ -1379,13 +1377,7 @@ let dataObject =
               ]
             }
           },
-          {
-            "British Virgin Islands":{
-              "city":[
-                "Road Town"
-              ]
-            }
-          },
+          "Virgin Islands",
           {
             "Canada":{
               "city":[
@@ -1514,13 +1506,6 @@ let dataObject =
             }
           },
           {
-            "Navassa Island":{
-              "city":[
-                "Lulu Town"
-              ]
-            }
-          },
-          {
             "Nicaragua":{
               "city":[
                 "Managua"
@@ -1538,20 +1523,6 @@ let dataObject =
             "Puerto Rico":{
               "city":[
                 "San Juan"
-              ]
-            }
-          },
-          {
-            "Saba":{
-              "city":[
-                "The Bottom"
-              ]
-            }
-          },
-          {
-            "Saint Barthélemy":{
-              "city":[
-                "Gustavia"
               ]
             }
           },
@@ -1591,20 +1562,6 @@ let dataObject =
             }
           },
           {
-            "Sint Eustatius":{
-              "city":[
-                "Oranjestad"
-              ]
-            }
-          },
-          {
-            "Sint Maarten":{
-              "city":[
-                "Philipsburg"
-              ]
-            }
-          },
-          {
             "Trinidad and Tobago":{
               "city":[
                 "Port of Spain"
@@ -1633,7 +1590,7 @@ let dataObject =
                 {
                   "Alabama":{
                     "city":[
-                      "Montgomery",
+                      "Montgomery"
                     ]
                   },
                   "Alaska":{
@@ -2018,17 +1975,14 @@ let dataObject =
     "Pacific Ocean"
   ],
   "desert":[
-    "Sahara Desert",
-    "Arabian Desert",
+    "Sahara",
     "Gobi Desert",
     "Kalahari Desert",
     "Great Victoria Desert",
-    "Patagonian Desert",
-    "Syrian Desert",
-    "Great Basin Desert"
+    "Patagonian Desert"
   ],
   "mountainRange":[
-    "Mid-ocean ridge (mountain range)",
+    "Mid-Atlantic Ridge (mountain range)",
     "Andes",
     "Rocky Mountains",
     "Great Dividing Range",
@@ -2048,10 +2002,11 @@ let dataObject =
   ],
   "longitude":[
     "International Date Line",
-    "Prime Meridian"
+    "Meridian of Greenwich (Prime Meridian)"
   ],
   "gulf":[
     "Gulf of Mexico",
+    "Gulf of Alaska",
     "Persian Gulf"
   ],
   "sea":[
@@ -2059,6 +2014,7 @@ let dataObject =
     "Arabian Sea",
     "South China Sea",
     "Caribbean Sea",
+    "Norweigian Sea",
     "Mediterranean Sea",
     "Bering Sea",
     "Norwegian Sea",
@@ -2066,11 +2022,17 @@ let dataObject =
     "Greenland Sea",
     "Arafura Sea",
     "Sea of Japan",
-    "Siberian Sea",
+    "East Siberian Sea",
     "North Sea",
     "Black Sea",
     "Red Sea",
     "Baltic Sea",
+    "Barents Sea",
+    "Kara Sea",
+    "Laptev Sea",
+    "East China Sea",
+    "Phillippine Sea",
+    "Scotia Sea",
     "Caspian Sea"
   ],
   "lake":[
@@ -2092,13 +2054,8 @@ let dataObject =
     "Bay of Bengal",
     "Hudson's Bay",
     "Bay of Biscay ",
-    "Barrin Bay",
+    "Baffin Bay",
     "James Bay",
-    "Chesapeake Bay",
-    "Bay of Fundy",
-    "Port Phillip Bay",
-    "San Francisco Bay",
-    "Chesapeake Bay",
-    "Banderas Bay"
+    "Bay of Fundy"
   ]
 }
